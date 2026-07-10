@@ -1307,7 +1307,7 @@
             transition: all 0.3s;
         }
         @media (max-width: 768px) {
-            .menu-btn { display: flex; }
+            .menu-btn { display: flex !important; z-index: 1001; position: relative; }
             .nav-right { display: none; }
             nav {
                 position: fixed;
