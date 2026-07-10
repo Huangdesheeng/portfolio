@@ -1376,7 +1376,7 @@
             <span></span><span></span><span></span>
         </div>
         <nav id="nav">
-            <div class="nav-close" id="navClose">&times;</div>
+            <div class="nav-close" id="navClose"></div>
             <a href="#hero">首页</a>
             <span class="nav-dot">·</span>
             <a href="#brand">作品</a>
@@ -2870,12 +2870,6 @@
             link.addEventListener('click', () => {
                 nav.classList.remove('open');
             });
-        });
-        // 点击导航外部关闭菜单
-        document.addEventListener('click', (e) => {
-            if (!nav.contains(e.target) && !menuBtn.contains(e.target) && nav.classList.contains('open')) {
-                nav.classList.remove('open');
-            }
         });
     </script>
 </body>
